@@ -17,51 +17,31 @@ Simple interactive PowerShell scripts to back up your important user data before
 - اطلاعات سیستم: خروجی پروفایل‌ها/رمزهای Wi-Fi، لیست برنامه‌های نصب‌شده، پرینترها، تنظیمات IP و درایوهای شبکه
 - اختیاری: هر پوشهٔ سفارشی که خودتان انتخاب کنید
 
-## Requirements / پیش‌نیازها
+## Requirements
 - Windows with PowerShell (scripts use built-in tools like `robocopy` and `netsh`)
 - Administrator access (scripts request elevation automatically)
 - An external drive or a drive other than `C:` with enough free space for backup
 
-- ویندوز با PowerShell (اسکریپت‌ها از ابزارهای داخلی مثل `robocopy` و `netsh` استفاده می‌کنند)
-- دسترسی Administrator (اسکریپت‌ها در صورت نیاز به‌صورت خودکار درخواست دسترسی می‌دهند)
-- یک درایو اکسترنال یا درایوی غیر از `C:` با فضای خالی کافی برای بکاپ
+## How to use
 
-## How to use / نحوه استفاده
-
-### 1) Download / دانلود
+### 1) Download
 - **Option A:** On GitHub, click **Code → Download ZIP**, then extract the files.
 - **Option B:** Clone the repo:
   ```bash
   git clone https://github.com/zebka/windows-reinstall-backup.git
   ```
 
-- **روش A:** در گیت‌هاب روی **Code → Download ZIP** کلیک کنید و فایل‌ها را Extract کنید.
-- **روش B:** کلون کردن ریپو:
-  ```bash
-  git clone https://github.com/zebka/windows-reinstall-backup.git
-  ```
-
-### 2) Backup (before reinstall) / بکاپ (قبل از نصب مجدد)
+### 2) Backup (before reinstall)
 1. Connect an external drive.
 2. Run `Run-Backup.bat` (or `Backup-BeforeReinstall.ps1`).
 3. Select what to back up in the menu and continue.
 4. The backup will be saved in a folder like `Backup_<PC>_<timestamp>` on the destination drive.
 
-1. یک درایو اکسترنال وصل کنید.
-2. فایل `Run-Backup.bat` (یا `Backup-BeforeReinstall.ps1`) را اجرا کنید.
-3. در منوی تعاملی موارد موردنظر برای بکاپ را انتخاب و ادامه دهید.
-4. بکاپ در پوشه‌ای با نامی مشابه `Backup_<PC>_<timestamp>` روی درایو مقصد ذخیره می‌شود.
-
-### 3) Restore (after reinstall) / بازیابی (بعد از نصب مجدد)
+### 3) Restore (after reinstall)
 1. After reinstalling Windows, copy/download this repo again (if needed) and connect the backup drive.
 2. Run `Run-Restore.bat` (or `Restore-AfterReinstall.ps1`).
 3. Choose the backup folder and map backup users to Windows users if asked.
 4. Select items to restore and continue.
-
-1. بعد از نصب مجدد ویندوز، در صورت نیاز این ریپو را دوباره دانلود/کپی کنید و درایو بکاپ را وصل کنید.
-2. فایل `Run-Restore.bat` (یا `Restore-AfterReinstall.ps1`) را اجرا کنید.
-3. پوشهٔ بکاپ را انتخاب کنید و در صورت پرسش، کاربران بکاپ را به کاربران ویندوز مپ کنید.
-4. موارد موردنظر برای بازیابی را انتخاب و ادامه دهید.
 
 ## Notes / نکات
 - This is for backing up user data/settings, **not** a full disk/system image.
