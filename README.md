@@ -2,7 +2,7 @@
 
 [فارسی (Persian)](README.fa.md)
 
-Interactive PowerShell backup & restore for Windows reinstall: save your user folders, browser bookmarks, Wi-Fi passwords, and Outlook data before reinstalling Windows or doing a fresh install (e.g. Windows 7 to Windows 10 upgrade), then restore them afterwards.
+Interactive PowerShell backup & restore for Windows reinstall: save your user folders, browser bookmarks, Wi-Fi passwords, and Outlook data before reinstalling Windows or doing a fresh install (e.g. moving from Windows 7 to Windows 10 with a fresh install), then restore them afterwards.
 
 If you're tired of manually backing up the same files every time you reinstall Windows for yourself or a client, these scripts make the process much easier.
 
